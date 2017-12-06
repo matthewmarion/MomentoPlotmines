@@ -3,3 +3,7 @@ version: 1.0
 author: Matt (HM04)
 description: MomentoPlotmines plugin.
 main: us.mattmarion.momentoplotmines.MomentoPlotmines
+
+commands:
+  plotmine:
+    description: Plotmine command.

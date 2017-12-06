@@ -43,4 +43,12 @@ public class ConfigManager {
             e.printStackTrace();
         }
     }
+
+    public static FileConfiguration getProfilesConfig() {
+        return profilesConfig;
+    }
+
+    public static FileConfiguration getMessagesConfig() {
+        return messagesConfig;
+    }
 }

@@ -1,0 +1,6 @@
+NO_PERMISSION_MESSAGE: "&cYou do not have permission to execute this command."
+ONLY_CONSOLE_MESSAGE: "&cThis command can only be executed by the console."
+ONLY_PLAYER_MESSAGE: "&cThis command can only be executed by a player."
+PLAYER_NOT_FOUND_MESSAGE: "&cThe requested player could not be found."
+
+PLAYER_TOKEN_BALANCE_MESSAGE: "&aTokens: &6{tokens}"

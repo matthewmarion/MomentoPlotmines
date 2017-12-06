@@ -30,18 +30,18 @@ public class CommandHandler implements CommandExecutor {
             final MomentoCommandExecutor command = commands.get(name);
 
             if (command.getPermission() != null && !sender.hasPermission(command.getPermission())) {
-                sender.sendMessage(MessageUtils.NO_PERMISSION_MESSAGE);
+                MessageUtils.tell(sender, MessageUtils.NO_PERMISSION_MESSAGE, null, null);
                 return false;
             }
 
             if (!command.isBoth()) {
                 if (command.isConsole() && sender instanceof Player) {
-                    sender.sendMessage(MessageUtils.ONLY_CONSOLE_MESSAGE);
+                    MessageUtils.tell(sender, MessageUtils.ONLY_CONSOLE_MESSAGE, null, null);
                     return false;
                 }
 
                 if (command.isPlayer() && sender instanceof ConsoleCommandSender) {
-                    sender.sendMessage(MessageUtils.ONLY_PLAYER_MESSAGE);
+                    MessageUtils.tell(sender, MessageUtils.ONLY_PLAYER_MESSAGE, null, null);
                     return false;
                 }
             }

@@ -10,14 +10,16 @@ public class ProfileListeners implements Listener {
     @EventHandler
     public void on(PlayerJoinEvent event) {
         Profile profile = new Profile(event.getPlayer());
+        profile.load();
     }
 
     @EventHandler
     public void on(PlayerQuitEvent event) {
-        Profile quitProfile = Profile.getByPlayer(event.getPlayer());
-        if (quitProfile == null) {
+        Profile profile = Profile.getByPlayer(event.getPlayer());
+        if (profile == null) {
             return;
         }
-        Profile.getProfiles().remove(quitProfile);
+        profile.save();
+        Profile.getProfiles().remove(profile);
     }
 }

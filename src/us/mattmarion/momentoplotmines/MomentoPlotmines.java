@@ -1,19 +1,18 @@
 package us.mattmarion.momentoplotmines;
 
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 import us.mattmarion.momentoplotmines.command.CommandHandler;
 import us.mattmarion.momentoplotmines.configuration.ConfigManager;
 import us.mattmarion.momentoplotmines.profile.ProfileListeners;
-import java.io.File;
 import java.util.Arrays;
 
 public class MomentoPlotmines extends JavaPlugin {
 
     private static MomentoPlotmines instance;
 
-    public final void onEnable() {
+    public void onEnable() {
+        instance = this;
         ConfigManager configManager = new ConfigManager();
         configManager.loadConfig();
         registerListeners(new ProfileListeners());

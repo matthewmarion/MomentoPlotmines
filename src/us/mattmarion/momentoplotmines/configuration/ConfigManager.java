@@ -37,11 +37,21 @@ public class ConfigManager {
     private void loadFileIntoConfiguration(File file, FileConfiguration fileConfiguration) {
         try {
             fileConfiguration.load(file);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (InvalidConfigurationException e) {
+        } catch (IOException | InvalidConfigurationException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void save(File file, FileConfiguration fileConfiguration) {
+        try {
+            fileConfiguration.save(file);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static File getProfilesFile() {
+        return profilesf;
     }
 
     public static FileConfiguration getProfilesConfig() {

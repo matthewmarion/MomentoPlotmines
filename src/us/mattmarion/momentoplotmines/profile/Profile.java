@@ -14,7 +14,7 @@ public class Profile {
     private static Set<Profile> profiles = new HashSet<>();
     private UUID uuid;
     private Player player;
-    private double tokens;
+    private int tokens;
     private Plotmine plotmine;
 
     public Profile(UUID uuid, Player player) {
@@ -44,17 +44,19 @@ public class Profile {
         return profiles;
     }
 
+
     public void save() {
-        FileConfiguration profileConfig = ConfigManager.getProfilesConfig();
-        profileConfig.set(uuid + ".name", player.getName());
-        profileConfig.set(uuid + ".tokens", tokens);
-        // profileConfig.set(uuid + ".plotmine" + ".tier", plotmine.getTier());
-        // profileConfig.set(uuid + ".plotmine" + ".composition", plotmine.getComposition());
+        FileConfiguration profilesConfig = ConfigManager.getProfilesConfig();
+        profilesConfig.set(uuid + ".name", player.getName());
+        profilesConfig.set(uuid + ".tokens", tokens);
+        // profilesConfig.set(uuid + ".plotmine" + ".tier", plotmine.getTier());
+        // profilesConfig.set(uuid + ".plotmine" + ".composition", plotmine.getComposition());
+        ConfigManager.save(ConfigManager.getProfilesFile(), profilesConfig);
     }
 
     public void load() {
         FileConfiguration profileConfig = ConfigManager.getProfilesConfig();
-        tokens = profileConfig.getDouble(uuid + ".tokens");
+        tokens = profileConfig.getInt(uuid + ".tokens");
         // TODO: Load plotmine configuration data
     }
 
@@ -66,11 +68,11 @@ public class Profile {
         return player;
     }
 
-    public double getTokens() {
+    public int getTokens() {
         return tokens;
     }
 
-    public void setTokens(double tokens) {
+    public void setTokens(int tokens) {
         this.tokens = tokens;
     }
 

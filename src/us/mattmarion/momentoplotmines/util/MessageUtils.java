@@ -26,6 +26,12 @@ public class MessageUtils {
     public static final String ONLY_CONSOLE_MESSAGE = ConfigManager.getMessagesConfig().getString("ONLY_CONSOLE_MESSAGE");
     public static final String ONLY_PLAYER_MESSAGE = ConfigManager.getMessagesConfig().getString("ONLY_PLAYER_MESSAGE");
     public static final String PLAYER_NOT_FOUND_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER_NOT_FOUND_MESSAGE");
+    public static final String FIELD_NOT_NUMERIC_MESSAGE = ConfigManager.getMessagesConfig().getString("FIELD_NOT_NUMERIC_MESSAGE");
 
     public static final String PLAYER_TOKEN_BALANCE_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER_TOKEN_BALANCE_MESSAGE");
+    public static final String PLAYER_GIVE_TOKEN_SENDER_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER_GIVE_TOKEN_SENDER_MESSAGE");
+    public static final String PLAYER_GIVE_TOKEN_RECIPIENT_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER_GIVE_TOKEN_RECIPIENT_MESSAGE");
+    public static final String PLAYER_SET_TOKEN_SENDER_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER_SET_TOKEN_SENDER_MESSAGE");
+    public static final String PLAYER_SET_TOKEN_RECIPIENT_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER_SET_TOKEN_RECIPIENT_MESSAGE");
+
 }

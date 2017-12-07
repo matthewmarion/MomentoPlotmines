@@ -72,6 +72,14 @@ public class Profile {
         return tokens;
     }
 
+    public void addTokens(int amount) {
+        tokens += amount;
+    }
+
+    public void removeTokens(int amount) {
+        tokens -= amount;
+    }
+
     public void setTokens(int tokens) {
         this.tokens = tokens;
     }

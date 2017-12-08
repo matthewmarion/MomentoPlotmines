@@ -6,6 +6,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
+import us.mattmarion.momentoplotmines.command.plotmine.CreatePlotmineCommand;
 import us.mattmarion.momentoplotmines.command.tokens.GiveCreditCommand;
 import us.mattmarion.momentoplotmines.command.tokens.SetCreditCommand;
 import us.mattmarion.momentoplotmines.command.tokens.TokensCommand;
@@ -21,6 +22,7 @@ public class CommandHandler implements CommandExecutor {
         commands.put("tokens", new TokensCommand());
         commands.put("givecredit", new GiveCreditCommand());
         commands.put("setcredit", new SetCreditCommand());
+        commands.put("create", new CreatePlotmineCommand());
     }
 
     @Override

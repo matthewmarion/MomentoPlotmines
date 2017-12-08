@@ -6,6 +6,7 @@ import us.mattmarion.momentoplotmines.configuration.ConfigManager;
 import us.mattmarion.momentoplotmines.plotmine.Plotmine;
 
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 
@@ -49,15 +50,17 @@ public class Profile {
         FileConfiguration profilesConfig = ConfigManager.getProfilesConfig();
         profilesConfig.set(uuid + ".name", player.getName());
         profilesConfig.set(uuid + ".tokens", tokens);
-        // profilesConfig.set(uuid + ".plotmine" + ".tier", plotmine.getTier());
-        // profilesConfig.set(uuid + ".plotmine" + ".composition", plotmine.getComposition());
+        profilesConfig.set(uuid + ".plotmine", plotmine.serialize());
         ConfigManager.save(ConfigManager.getProfilesFile(), profilesConfig);
     }
 
     public void load() {
-        FileConfiguration profileConfig = ConfigManager.getProfilesConfig();
-        tokens = profileConfig.getInt(uuid + ".tokens");
-        // TODO: Load plotmine configuration data
+        FileConfiguration profilesConfig = ConfigManager.getProfilesConfig();
+        tokens = profilesConfig.getInt(uuid + ".tokens");
+        if (profilesConfig.get(uuid + ".plotmine") == null) {
+            return;
+        }
+        plotmine = new Plotmine(ConfigManager.get(profilesConfig, uuid + ".plotmine"));
     }
 
     public UUID getUuid() {

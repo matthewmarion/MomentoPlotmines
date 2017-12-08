@@ -50,6 +50,11 @@ public class ConfigManager {
         }
     }
 
+    @SuppressWarnings("unchecked")
+    public static <T> T get(FileConfiguration fileConfig, String path) {
+        return (T) fileConfig.get(path);
+    }
+
     public static File getProfilesFile() {
         return profilesf;
     }

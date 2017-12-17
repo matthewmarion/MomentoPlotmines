@@ -1,5 +1,12 @@
 package us.mattmarion.momentoplotmines.command.plotmine;
 
+import com.intellectualcrafters.plot.PS;
+import com.intellectualcrafters.plot.object.Location;
+import com.intellectualcrafters.plot.object.Plot;
+import com.intellectualcrafters.plot.object.PlotArea;
+import com.intellectualcrafters.plot.object.PlotPlayer;
+import com.intellectualcrafters.plot.object.worlds.PlotAreaManager;
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -23,11 +30,23 @@ public class CreatePlotmineCommand extends MomentoCommandExecutor {
     @Override
     public void execute(CommandSender sender, String[] args) {
         Player player = (Player) sender;
+        PlotPlayer plotPlayer = PlotPlayer.get(player.getName());
+        Location location = plotPlayer.getLocation();
+        Plot plot = Plot.getPlot(location);
+        if (plot == null || (!playerIsPlotOwner(player, plot))) {
+            MessageUtils.tell(sender, MessageUtils.INVALID_CREATE_LOCATION_PLOTMINE_MESSAGE, null, null);
+            return;
+        }
+
+        Profile profile = Profile.getByPlayer(player);
         List<String> members = new ArrayList<String>();
         Plotmine plotmine = new Plotmine(player.getUniqueId(), player.getLocation(), Material.EMERALD_BLOCK, 10, members);
-        Profile profile = Profile.getByPlayer(player);
         profile.setPlotmine(plotmine);
         profile.save();
-        MessageUtils.tell(sender, "Created plotmine", null, null);
+        MessageUtils.tell(sender, MessageUtils.SUCCESS_CREATE_PLOTMINE_MESSAGE, null, null);
+    }
+
+    private boolean playerIsPlotOwner(Player player, Plot plot) {
+        return plot.getOwners().contains(player.getUniqueId());
     }
 }

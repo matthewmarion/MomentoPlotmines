@@ -17,7 +17,6 @@ public class MomentoPlotmines extends JavaPlugin {
         ConfigurationSerialization.registerClass(Plotmine.class, "Plotmine");
     }
 
-
     public void onEnable() {
         instance = this;
         ConfigManager configManager = new ConfigManager();

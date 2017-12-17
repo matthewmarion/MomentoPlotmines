@@ -22,16 +22,21 @@ public class MessageUtils {
         return message = ChatColor.translateAlternateColorCodes('&', message);
     }
 
-    public static final String NO_PERMISSION_MESSAGE = ConfigManager.getMessagesConfig().getString("NO_PERMISSION_MESSAGE");
-    public static final String ONLY_CONSOLE_MESSAGE = ConfigManager.getMessagesConfig().getString("ONLY_CONSOLE_MESSAGE");
-    public static final String ONLY_PLAYER_MESSAGE = ConfigManager.getMessagesConfig().getString("ONLY_PLAYER_MESSAGE");
-    public static final String PLAYER_NOT_FOUND_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER_NOT_FOUND_MESSAGE");
-    public static final String FIELD_NOT_NUMERIC_MESSAGE = ConfigManager.getMessagesConfig().getString("FIELD_NOT_NUMERIC_MESSAGE");
+    // Util messages
+    public static final String NO_PERMISSION_MESSAGE = ConfigManager.getMessagesConfig().getString("NO-PERMISSION-MESSAGE");
+    public static final String ONLY_CONSOLE_MESSAGE = ConfigManager.getMessagesConfig().getString("ONLY-CONSOLE-MESSAGE");
+    public static final String ONLY_PLAYER_MESSAGE = ConfigManager.getMessagesConfig().getString("ONLY-PLAYER-MESSAGE");
+    public static final String PLAYER_NOT_FOUND_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER-NOT_FOUND-MESSAGE");
+    public static final String FIELD_NOT_NUMERIC_MESSAGE = ConfigManager.getMessagesConfig().getString("FIELD-NOT-NUMERIC-MESSAGE");
 
-    public static final String PLAYER_TOKEN_BALANCE_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER_TOKEN_BALANCE_MESSAGE");
-    public static final String PLAYER_GIVE_TOKEN_SENDER_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER_GIVE_TOKEN_SENDER_MESSAGE");
-    public static final String PLAYER_GIVE_TOKEN_RECIPIENT_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER_GIVE_TOKEN_RECIPIENT_MESSAGE");
-    public static final String PLAYER_SET_TOKEN_SENDER_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER_SET_TOKEN_SENDER_MESSAGE");
-    public static final String PLAYER_SET_TOKEN_RECIPIENT_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER_SET_TOKEN_RECIPIENT_MESSAGE");
+    // Token messages
+    public static final String PLAYER_TOKEN_BALANCE_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER-TOKEN_BALANCE-MESSAGE");
+    public static final String PLAYER_GIVE_TOKEN_SENDER_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER-GIVE-TOKEN-SENDER-MESSAGE");
+    public static final String PLAYER_GIVE_TOKEN_RECIPIENT_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER-GIVE-TOKEN-RECIPIENT_MESSAGE");
+    public static final String PLAYER_SET_TOKEN_SENDER_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER-SET-TOKEN_SENDER-MESSAGE");
+    public static final String PLAYER_SET_TOKEN_RECIPIENT_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER-SET-TOKEN-RECIPIENT-MESSAGE");
 
+    // Mine messages
+    public static final String SUCCESS_CREATE_PLOTMINE_MESSAGE = ConfigManager.getMessagesConfig().getString("SUCCESS-CREATE-PLOTMINE-MESSAGE");
+    public static final String INVALID_CREATE_LOCATION_PLOTMINE_MESSAGE = ConfigManager.getMessagesConfig().getString("INVALID-CREATE-LOCATION-PLOTMINE-MESSAGE");
 }

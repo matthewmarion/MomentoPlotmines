@@ -11,8 +11,6 @@ public class ProfileListeners implements Listener {
     public void on(PlayerJoinEvent event) {
         Profile profile = new Profile(event.getPlayer());
         profile.load();
-        event.getPlayer().sendMessage("Loaded your plotmine.");
-        event.getPlayer().sendMessage("Settings: " + profile.getPlotmine().getMaterial().toString());
     }
 
     @EventHandler

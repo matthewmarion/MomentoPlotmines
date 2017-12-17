@@ -3,7 +3,10 @@ package us.mattmarion.momentoplotmines.configuration;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.configuration.serialization.ConfigurationSerializable;
+import org.bukkit.configuration.serialization.ConfigurationSerialization;
 import us.mattmarion.momentoplotmines.MomentoPlotmines;
+import us.mattmarion.momentoplotmines.plotmine.Plotmine;
 
 import java.io.File;
 import java.io.IOException;

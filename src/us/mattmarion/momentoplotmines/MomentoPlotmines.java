@@ -1,15 +1,22 @@
 package us.mattmarion.momentoplotmines;
 
+import org.bukkit.configuration.serialization.ConfigurationSerialization;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 import us.mattmarion.momentoplotmines.command.CommandHandler;
 import us.mattmarion.momentoplotmines.configuration.ConfigManager;
+import us.mattmarion.momentoplotmines.plotmine.Plotmine;
 import us.mattmarion.momentoplotmines.profile.ProfileListeners;
 import java.util.Arrays;
 
 public class MomentoPlotmines extends JavaPlugin {
 
     private static MomentoPlotmines instance;
+
+    static {
+        ConfigurationSerialization.registerClass(Plotmine.class, "Plotmine");
+    }
+
 
     public void onEnable() {
         instance = this;

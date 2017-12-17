@@ -9,12 +9,12 @@ import us.mattmarion.momentoplotmines.profile.Profile;
 import us.mattmarion.momentoplotmines.util.MessageUtils;
 import us.mattmarion.momentoplotmines.util.Utilities;
 
-public class SetCreditCommand extends MomentoCommandExecutor {
+public class SetTokenCommand extends MomentoCommandExecutor {
 
     public void GiveCreditCommand() {
-        setSubCommand("setcredit");
-        setPermission("plotmine.setcredit");
-        setUsage("/plotmine setcredit <name> <amount>");
+        setSubCommand("settoken");
+        setPermission("plotmine.settoken");
+        setUsage("/plotmine settoken <name> <amount>");
         setBoth();
         setLength(3);
     }

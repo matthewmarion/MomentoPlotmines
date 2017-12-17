@@ -1,14 +1,14 @@
 package us.mattmarion.momentoplotmines.profile;
 
+import org.bukkit.Location;
+import org.bukkit.Material;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import us.mattmarion.momentoplotmines.configuration.ConfigManager;
 import us.mattmarion.momentoplotmines.plotmine.Plotmine;
+import us.mattmarion.momentoplotmines.util.Utilities;
 
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-import java.util.UUID;
+import java.util.*;
 
 public class Profile {
 
@@ -60,7 +60,7 @@ public class Profile {
         if (profilesConfig.get(uuid + ".plotmine") == null) {
             return;
         }
-        plotmine = new Plotmine(ConfigManager.get(profilesConfig, uuid + ".plotmine"));
+        plotmine = Plotmine.load(profilesConfig, uuid);
     }
 
     public UUID getUuid() {

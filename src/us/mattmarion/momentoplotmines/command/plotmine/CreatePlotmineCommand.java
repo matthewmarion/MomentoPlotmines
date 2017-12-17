@@ -13,11 +13,14 @@ import org.bukkit.entity.Player;
 import us.mattmarion.momentoplotmines.command.MomentoCommandExecutor;
 import us.mattmarion.momentoplotmines.plotmine.Plotmine;
 import us.mattmarion.momentoplotmines.profile.Profile;
+import us.mattmarion.momentoplotmines.util.ConfirmationService;
 import us.mattmarion.momentoplotmines.util.MessageUtils;
 
 import java.util.*;
 
 public class CreatePlotmineCommand extends MomentoCommandExecutor {
+
+    private HashMap<UUID, Integer> playersPendingPlotmineCreation = new HashMap<>();
 
     public CreatePlotmineCommand() {
         setSubCommand("create");
@@ -39,11 +42,23 @@ public class CreatePlotmineCommand extends MomentoCommandExecutor {
         }
 
         Profile profile = Profile.getByPlayer(player);
+        if (playerHasExistingPlot(profile)) {
+            if (!ConfirmationService.playerIsPending(playersPendingPlotmineCreation, player)) {
+                ConfirmationService.setPending(playersPendingPlotmineCreation, player, MessageUtils.CONFIRM_PLOTMINE_CREATE_MESSAGE);
+                return;
+            }
+            ConfirmationService.removePending(playersPendingPlotmineCreation, player);
+        }
+
         List<String> members = new ArrayList<String>();
         Plotmine plotmine = new Plotmine(player.getUniqueId(), player.getLocation(), Material.EMERALD_BLOCK, 10, members);
         profile.setPlotmine(plotmine);
         profile.save();
         MessageUtils.tell(sender, MessageUtils.SUCCESS_CREATE_PLOTMINE_MESSAGE, null, null);
+    }
+
+    private boolean playerHasExistingPlot(Profile profile) {
+        return profile.getPlotmine() != null;
     }
 
     private boolean playerIsPlotOwner(Player player, Plot plot) {

@@ -10,5 +10,6 @@
     <orderEntry type="library" name="spigot-1.12.2" level="project" />
     <orderEntry type="library" name="spigot-1.12.21" level="project" />
     <orderEntry type="library" name="PlotSquared-Bukkit-17.12.07-6c06e48-1944" level="project" />
+    <orderEntry type="library" name="FastAsyncWorldEdit-bukkit-17.12.15-0dbb617-949-18.0.6" level="project" />
   </component>
 </module>

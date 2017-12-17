@@ -12,3 +12,4 @@ PLAYER-SET-TOKEN-RECIPIENT-MESSAGE: "&aYour balance was set to &6{amount}"
 
 SUCCESS-CREATE-PLOTMINE-MESSAGE: "&aYou have successfully created a new plotmine!"
 INVALID-CREATE-LOCATION-PLOTMINE-MESSAGE: "&cYou cannot create a plotmine here!"
+CONFIRM-PLOTMINE-CREATE-MESSAGE: "&eWARNING: &aYou already have an existing plotmine. &eRepeat the same command if you want to &aoverride &eit."

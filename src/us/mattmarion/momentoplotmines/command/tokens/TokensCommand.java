@@ -12,7 +12,7 @@ public class TokensCommand extends MomentoCommandExecutor {
 
     public TokensCommand() {
         setSubCommand("tokens");
-        setPermission("plotmine.tokens");
+        setPermission("plotmine.user");
         setUsage("/plotmine tokens (username)");
         setPlayer(true);
         setLength(1);
@@ -24,6 +24,11 @@ public class TokensCommand extends MomentoCommandExecutor {
         if (args.length == 1) {
             int tokens = getTokens((Player) sender);
             MessageUtils.tell(sender, message, "{tokens}", Integer.toString(tokens));
+            return;
+        }
+        Player player = (Player) sender;
+        if (player.hasPermission("plotmine.admin")) {
+            MessageUtils.tell(sender, MessageUtils.NO_PERMISSION_MESSAGE, null, null);
             return;
         }
         Player target = Bukkit.getPlayerExact(args[1]);

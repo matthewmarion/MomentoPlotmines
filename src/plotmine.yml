@@ -1,0 +1,9 @@
+Tier1:
+  size: 10
+  composition: EMERALD_BLOCK
+Tier2:
+  size: 20
+  composition: EMERALD_BLOCK
+Tier3:
+  size: 30
+  composition: EMERALD_BLOCK

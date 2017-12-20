@@ -11,10 +11,13 @@ import org.bukkit.Material;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import us.mattmarion.momentoplotmines.command.MomentoCommandExecutor;
+import us.mattmarion.momentoplotmines.configuration.ConfigManager;
 import us.mattmarion.momentoplotmines.plotmine.Plotmine;
+import us.mattmarion.momentoplotmines.plotmine.PlotmineService;
 import us.mattmarion.momentoplotmines.profile.Profile;
 import us.mattmarion.momentoplotmines.util.ConfirmationService;
 import us.mattmarion.momentoplotmines.util.MessageUtils;
+import us.mattmarion.momentoplotmines.util.PermissionUtils;
 
 import java.util.*;
 
@@ -24,7 +27,7 @@ public class CreatePlotmineCommand extends MomentoCommandExecutor {
 
     public CreatePlotmineCommand() {
         setSubCommand("create");
-        setPermission("plotmine.create");
+        setPermission("plotmine.user");
         setUsage("/plotmine create");
         setPlayer(true);
         setLength(1);
@@ -42,23 +45,28 @@ public class CreatePlotmineCommand extends MomentoCommandExecutor {
         }
 
         Profile profile = Profile.getByPlayer(player);
-        if (playerHasExistingPlot(profile)) {
+        if (profile.getPlotmine() != null) {
             if (!ConfirmationService.playerIsPending(playersPendingPlotmineCreation, player)) {
                 ConfirmationService.setPending(playersPendingPlotmineCreation, player, MessageUtils.CONFIRM_PLOTMINE_CREATE_MESSAGE);
                 return;
             }
             ConfirmationService.removePending(playersPendingPlotmineCreation, player);
-        }
+            Plotmine oldMine = profile.getPlotmine();
+            PlotmineService oldMineService = new PlotmineService(oldMine);
+            oldMineService.build(Material.GRASS);
 
+        }
         List<String> members = new ArrayList<String>();
-        Plotmine plotmine = new Plotmine(player.getUniqueId(), player.getLocation(), Material.EMERALD_BLOCK, 10, members);
+        Material composition = PermissionUtils.getTierComposition(player);
+        System.out.println(composition);
+        int size = PermissionUtils.getTierSize(player);
+        System.out.println(size);
+        Plotmine plotmine = new Plotmine(player.getUniqueId(), player.getLocation(), composition, size, members);
         profile.setPlotmine(plotmine);
         profile.save();
+        PlotmineService plotmineService = new PlotmineService(plotmine);
+        plotmineService.build(plotmine.getMaterial());
         MessageUtils.tell(sender, MessageUtils.SUCCESS_CREATE_PLOTMINE_MESSAGE, null, null);
-    }
-
-    private boolean playerHasExistingPlot(Profile profile) {
-        return profile.getPlotmine() != null;
     }
 
     private boolean playerIsPlotOwner(Player player, Plot plot) {

@@ -6,6 +6,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import us.mattmarion.momentoplotmines.command.CommandHandler;
 import us.mattmarion.momentoplotmines.configuration.ConfigManager;
 import us.mattmarion.momentoplotmines.plotmine.Plotmine;
+import us.mattmarion.momentoplotmines.plotmine.PlotmineEvents;
 import us.mattmarion.momentoplotmines.profile.ProfileListeners;
 import java.util.Arrays;
 
@@ -21,7 +22,7 @@ public class MomentoPlotmines extends JavaPlugin {
         instance = this;
         ConfigManager configManager = new ConfigManager();
         configManager.loadConfig();
-        registerListeners(new ProfileListeners());
+        registerListeners(new ProfileListeners(), new PlotmineEvents());
         registerCommands();
     }
 

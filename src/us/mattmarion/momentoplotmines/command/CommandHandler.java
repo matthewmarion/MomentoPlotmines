@@ -7,6 +7,9 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 import us.mattmarion.momentoplotmines.command.plotmine.CreatePlotmineCommand;
+import us.mattmarion.momentoplotmines.command.plotmine.DeletePlotmineCommand;
+import us.mattmarion.momentoplotmines.command.plotmine.HelpPlotmineCommand;
+import us.mattmarion.momentoplotmines.command.plotmine.TeleportPlotmineCommand;
 import us.mattmarion.momentoplotmines.command.tokens.GiveTokenCommand;
 import us.mattmarion.momentoplotmines.command.tokens.SetTokenCommand;
 import us.mattmarion.momentoplotmines.command.tokens.TokensCommand;
@@ -23,11 +26,18 @@ public class CommandHandler implements CommandExecutor {
         commands.put("givetoken", new GiveTokenCommand());
         commands.put("settoken", new SetTokenCommand());
         commands.put("create", new CreatePlotmineCommand());
+        commands.put("help", new HelpPlotmineCommand());
+        commands.put("teleport", new TeleportPlotmineCommand());
+        commands.put("delete", new DeletePlotmineCommand());
     }
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (cmd.getName().equalsIgnoreCase("plotmine")) {
+            if (args.length == 0) {
+                MessageUtils.tellList(sender, MessageUtils.HELP_MESSAGES);
+                return true;
+            }
             String name = args[0].toLowerCase();
             if (!commands.containsKey(name)) {
                 return false;

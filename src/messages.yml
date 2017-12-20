@@ -12,4 +12,24 @@ PLAYER-SET-TOKEN-RECIPIENT-MESSAGE: "&aYour balance was set to &6{amount}"
 
 SUCCESS-CREATE-PLOTMINE-MESSAGE: "&aYou have successfully created a new plotmine!"
 INVALID-CREATE-LOCATION-PLOTMINE-MESSAGE: "&cYou cannot create a plotmine here!"
-CONFIRM-PLOTMINE-CREATE-MESSAGE: "&eWARNING: &aYou already have an existing plotmine. &eRepeat the same command if you want to &aoverride &eit."
+CONFIRM-PLOTMINE-CREATE-MESSAGE: "&c&lWARNING: &aYou already have an existing plotmine. &eRepeat the same command if you want to &aoverride &eit."
+NULL-PLOTMINE-MESSAGE: "&eNo created plotmine found."
+SUCCESS-TELEPORT-MESSAGE: "&aTeleported you to &e{name}'s &aplotmine."
+CONFIRM-PLOTMINE-DELETE-MESSAGE: "&c&lWARNING: &eYou are about to delete your plotmine. &eRepeat the same command if you want to continue."
+SUCCESS-DELETE-PLOTMINE-MESSAGE: "&aYou have successfully deleted your plotmine."
+
+HELP-MESSAGES:
+  - '&cKey: &e<> &7fields are required &c|| &e() &7fields are optional.'
+  - '&e/plotmine (help) - &7All plotmine commands.'
+  - '&e/plotmine tp (name) - &7Teleport to your plot.'
+  - '&e/plotmine tokens (name) - &7View your tokens.'
+  - '&e/plotmine givetoken <name> <amount> - &7Give tokens.'
+  - '&e/plotmine settoken <name> <amount> - &7Set token amount.'
+  - '&e/plotmine upgrade - &7Upgrade your plotmine'
+  - '&e/plotmine move - &7Move your plotmine'
+  - '&e/plotmine delete (name) - &7Delete a plotmine.'
+  - '&e/plotmine create - &7Create a plotmine.'
+  - '&e/plotmine add <name> - &7Add a member to your plotmine.'
+  - '&e/plotmine remove <name> - &7Remove a member from your plotmine.'
+  - '&e/plotmine composition <id> - &7Set your plotmine composition.'
+

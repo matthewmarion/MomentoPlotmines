@@ -21,4 +21,8 @@ public class Utilities {
         float pitch = (float) config.getDouble(path + ".pitch");
         return new Location(world, x, y, z, yaw, pitch);
     }
+
+    public static boolean targetIsNull(Player target) {
+        return target == null || !target.isOnline();
+    }
 }

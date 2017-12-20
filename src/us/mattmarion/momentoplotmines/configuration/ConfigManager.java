@@ -13,8 +13,8 @@ import java.io.IOException;
 
 public class ConfigManager {
 
-    private static File profilesf, messagesf;
-    private static FileConfiguration profilesConfig, messagesConfig;
+    private static File profilesf, messagesf, plotminef;
+    private static FileConfiguration profilesConfig, messagesConfig, plotmineConfig;
 
     public void loadConfig() {
         profilesf = new File(MomentoPlotmines.getInstance().getDataFolder(), "profiles.yml");
@@ -23,11 +23,17 @@ public class ConfigManager {
         messagesf = new File(MomentoPlotmines.getInstance().getDataFolder(), "messages.yml");
         createNewFile(messagesf, "messages.yml");
 
+        plotminef = new File(MomentoPlotmines.getInstance().getDataFolder(), "plotmine.yml");
+        createNewFile(plotminef, "plotmine.yml");
+
         profilesConfig = new YamlConfiguration();
         loadFileIntoConfiguration(profilesf, profilesConfig);
 
         messagesConfig = new YamlConfiguration();
         loadFileIntoConfiguration(messagesf, messagesConfig);
+
+        plotmineConfig = new YamlConfiguration();
+        loadFileIntoConfiguration(plotminef, plotmineConfig);
     }
 
     private void createNewFile(File file, String fileName) {
@@ -68,5 +74,9 @@ public class ConfigManager {
 
     public static FileConfiguration getMessagesConfig() {
         return messagesConfig;
+    }
+
+    public static FileConfiguration getPlotmineConfig() {
+        return plotmineConfig;
     }
 }

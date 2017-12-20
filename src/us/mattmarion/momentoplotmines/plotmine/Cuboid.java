@@ -81,6 +81,22 @@ public class Cuboid implements Cloneable, ConfigurationSerializable, Iterable<Bl
         return blockList;
     }
 
+    public List<Block> getBorderBlocks() {
+        List<Block> boderBlocks = new ArrayList<>();
+        World world = this.getWorld();
+        if (world == null) {
+            return null;
+        }
+        int yMin = this.minimumPoint.getBlockY() - 1;
+        int yMax = this.maximumPoint.getBlockY();
+        for (int x = this.minimumPoint.getBlockX() - 1; x <= this.maximumPoint.getBlockX() + 1; x++) {
+            for (int z = this.minimumPoint.getBlockZ() - 1; z <= this.maximumPoint.getBlockZ() + 1; z++) {
+                boderBlocks.add(world.getBlockAt(x, yMin, z));
+            }
+        }
+        return boderBlocks;
+    }
+
     public Location getLowerLocation() {
         return this.minimumPoint.toLocation(this.getWorld());
     }

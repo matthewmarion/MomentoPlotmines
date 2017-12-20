@@ -50,7 +50,11 @@ public class Profile {
         FileConfiguration profilesConfig = ConfigManager.getProfilesConfig();
         profilesConfig.set(uuid + ".name", player.getName());
         profilesConfig.set(uuid + ".tokens", tokens);
-        profilesConfig.set(uuid + ".plotmine", plotmine.serialize());
+        if (plotmine == null) {
+            profilesConfig.set(uuid + ".plotmine", null);
+        } else {
+            profilesConfig.set(uuid + ".plotmine", plotmine.serialize());
+        }
         ConfigManager.save(ConfigManager.getProfilesFile(), profilesConfig);
     }
 

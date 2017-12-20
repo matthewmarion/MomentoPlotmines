@@ -13,7 +13,7 @@ public class SetTokenCommand extends MomentoCommandExecutor {
 
     public void GiveCreditCommand() {
         setSubCommand("settoken");
-        setPermission("plotmine.settoken");
+        setPermission("plotmine.admin");
         setUsage("/plotmine settoken <name> <amount>");
         setBoth();
         setLength(3);

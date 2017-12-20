@@ -13,7 +13,7 @@ public class GiveTokenCommand extends MomentoCommandExecutor {
 
     public void GiveCreditCommand() {
         setSubCommand("givetoken");
-        setPermission("plotmine.givetoken");
+        setPermission("plotmine.admin");
         setUsage("/plotmine givetoken <name> <amount>");
         setBoth();
         setLength(3);
@@ -21,7 +21,7 @@ public class GiveTokenCommand extends MomentoCommandExecutor {
 
     @Override
     public void execute(CommandSender sender, String[] args) {
-        Player target = Bukkit.getPlayer(args[1]);
+        Player target = Bukkit.getPlayerExact(args[1]);
         if (!Utilities.playerIsFound(target)) {
             MessageUtils.tell(sender, MessageUtils.PLAYER_NOT_FOUND_MESSAGE, null, null);
             return;
@@ -36,7 +36,7 @@ public class GiveTokenCommand extends MomentoCommandExecutor {
         int amount = Integer.parseInt(args[2]);
         profile.addTokens(amount);
         profile.save();
-        MessageUtils.tell(sender, MessageUtils.PLAYER_GIVE_TOKEN_SENDER_MESSAGE, "{amount}", Integer.toString(amount));
-        MessageUtils.tell(target, MessageUtils.PLAYER_GIVE_TOKEN_RECIPIENT_MESSAGE, "{amount}", Integer.toString(amount));
+        MessageUtils.tell(sender, MessageUtils.PLAYER_GIVE_TOKEN_SENDER_MESSAGE, "{amount}", args[2]);
+        MessageUtils.tell(target, MessageUtils.PLAYER_GIVE_TOKEN_RECIPIENT_MESSAGE, "{amount}", args[2]);
     }
 }

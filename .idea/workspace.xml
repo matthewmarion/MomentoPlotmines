@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd9a7b9a-e798-40dd-b1ab-b7e238c9d8a1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/command/CommandHandler.class" afterPath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/command/CommandHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/command/plotmine/CreatePlotmineCommand.class" afterPath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/command/plotmine/CreatePlotmineCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/command/plotmine/HelpPlotmineCommand.class" afterPath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/command/plotmine/HelpPlotmineCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/command/plotmine/TeleportPlotmineCommand.class" afterPath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/command/plotmine/TeleportPlotmineCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/command/tokens/GiveTokenCommand.class" afterPath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/command/tokens/GiveTokenCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/command/tokens/SetTokenCommand.class" afterPath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/command/tokens/SetTokenCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/command/tokens/TokensCommand.class" afterPath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/command/tokens/TokensCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/plotmine/Plotmine.class" afterPath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/plotmine/Plotmine.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/plotmine/PlotmineEvents.class" afterPath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/plotmine/PlotmineEvents.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/plotmine/PlotmineService.class" afterPath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/plotmine/PlotmineService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/util/MessageUtils.class" afterPath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/util/MessageUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/util/PermissionUtils.class" afterPath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/util/PermissionUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/util/Utilities.class" afterPath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/util/Utilities.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MomentoPlotmines/messages.yml" afterPath="$PROJECT_DIR$/out/production/MomentoPlotmines/messages.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/messages.yml" afterPath="$PROJECT_DIR$/src/messages.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/CommandHandler.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/CommandHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/CreatePlotmineCommand.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/CreatePlotmineCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/HelpPlotmineCommand.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/HelpPlotmineCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/TeleportPlotmineCommand.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/TeleportPlotmineCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/tokens/GiveTokenCommand.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/tokens/GiveTokenCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/tokens/SetTokenCommand.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/tokens/SetTokenCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/tokens/TokensCommand.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/tokens/TokensCommand.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/Plotmine.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/Plotmine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/PlotmineEvents.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/PlotmineEvents.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/PlotmineService.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/PlotmineService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/MessageUtils.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/MessageUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/PermissionUtils.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/PermissionUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/Utilities.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/Utilities.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,8 +36,8 @@
       <file leaf-file-name="Plotmine.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/Plotmine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="93" column="40" lean-forward="true" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
+            <state relative-caret-position="54">
+              <caret line="90" column="31" lean-forward="true" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,17 +45,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GiveTokenCommand.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/tokens/GiveTokenCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreatePlotmineCommand.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CreatePlotmineCommand.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/CreatePlotmineCommand.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="311">
@@ -709,7 +671,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1746862" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1746862" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1131,16 +1093,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/CreatePlotmineCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="68" column="54" lean-forward="true" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Downloads/spigot-1.12.2.jar!/org/bukkit/Location.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -1149,10 +1101,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/PlotmineService.java">
+    <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/PlotmineEvents.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="50" column="48" lean-forward="true" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
+        <state relative-caret-position="264">
+          <caret line="44" column="31" lean-forward="true" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/tokens/GiveTokenCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="30" column="90" lean-forward="true" selection-start-line="30" selection-start-column="90" selection-end-line="30" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/Plotmine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="90" column="31" lean-forward="true" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1169,31 +1139,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/PlotmineEvents.java">
+    <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/PlotmineService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="44" column="31" lean-forward="true" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
+        <state relative-caret-position="122">
+          <caret line="50" column="48" lean-forward="true" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/Plotmine.java">
+    <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/CreatePlotmineCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="93" column="40" lean-forward="true" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
+        <state relative-caret-position="311">
+          <caret line="68" column="54" lean-forward="true" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/tokens/GiveTokenCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

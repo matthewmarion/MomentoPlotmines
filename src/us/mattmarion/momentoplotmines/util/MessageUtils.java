@@ -57,5 +57,7 @@ public class MessageUtils {
     public static final String SUCCESS_TELEPORT_MESSAGE = ConfigManager.getMessagesConfig().getString("SUCCESS-TELEPORT-MESSAGE");
     public static final String CONFIRM_PLOTMINE_DELETE_MESSAGE = ConfigManager.getMessagesConfig().getString("CONFIRM-PLOTMINE-DELETE-MESSAGE");
     public static final String SUCCESS_DELETE_PLOTMINE_MESSAGE = ConfigManager.getMessagesConfig().getString("SUCCESS-DELETE-PLOTMINE-MESSAGE");
+    public static final String NO_UPGRADES_AVAILABLE = ConfigManager.getMessagesConfig().getString("NO-UPGRADES-AVAILABLE-MESSAGE");
+    public static final String SUCCESS_UPGRADE_MINE_MESSAGE = ConfigManager.getMessagesConfig().getString("SUCCESS-UPGRADE-MINE-MESSAGE");
 
 }

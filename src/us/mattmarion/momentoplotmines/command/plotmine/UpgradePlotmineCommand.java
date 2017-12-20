@@ -5,6 +5,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import us.mattmarion.momentoplotmines.command.MomentoCommandExecutor;
 import us.mattmarion.momentoplotmines.plotmine.Plotmine;
+import us.mattmarion.momentoplotmines.plotmine.PlotmineService;
 import us.mattmarion.momentoplotmines.profile.Profile;
 import us.mattmarion.momentoplotmines.util.MessageUtils;
 import us.mattmarion.momentoplotmines.util.PermissionUtils;
@@ -34,7 +35,14 @@ public class UpgradePlotmineCommand extends MomentoCommandExecutor {
         int size = PermissionUtils.getTierSize(player);
         Plotmine currentMine = profile.getPlotmine();
         if (currentMine.getMaterial() == material && currentMine.getSize() == size) {
-            // Tell them you dont need to upgrade
+            MessageUtils.tell(sender, MessageUtils.NO_UPGRADES_AVAILABLE, null, null);
+            return;
         }
+        Plotmine upgradedMine = new Plotmine(player.getUniqueId(), currentMine.getLocation(), material, size, currentMine.getMembers());
+        PlotmineService plotmineService = new PlotmineService(upgradedMine);
+        plotmineService.build(material);
+        profile.setPlotmine(upgradedMine);
+        profile.save();
+        MessageUtils.tell(sender, MessageUtils.SUCCESS_UPGRADE_MINE_MESSAGE, null, null);
     }
 }

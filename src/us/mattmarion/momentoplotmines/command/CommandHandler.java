@@ -6,10 +6,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
-import us.mattmarion.momentoplotmines.command.plotmine.CreatePlotmineCommand;
-import us.mattmarion.momentoplotmines.command.plotmine.DeletePlotmineCommand;
-import us.mattmarion.momentoplotmines.command.plotmine.HelpPlotmineCommand;
-import us.mattmarion.momentoplotmines.command.plotmine.TeleportPlotmineCommand;
+import us.mattmarion.momentoplotmines.command.plotmine.*;
 import us.mattmarion.momentoplotmines.command.tokens.GiveTokenCommand;
 import us.mattmarion.momentoplotmines.command.tokens.SetTokenCommand;
 import us.mattmarion.momentoplotmines.command.tokens.TokensCommand;
@@ -29,6 +26,7 @@ public class CommandHandler implements CommandExecutor {
         commands.put("help", new HelpPlotmineCommand());
         commands.put("teleport", new TeleportPlotmineCommand());
         commands.put("delete", new DeletePlotmineCommand());
+        commands.put("upgrade", new UpgradePlotmineCommand());
     }
 
     @Override

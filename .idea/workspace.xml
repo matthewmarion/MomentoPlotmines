@@ -2,37 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd9a7b9a-e798-40dd-b1ab-b7e238c9d8a1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/plotmine.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/DeletePlotmineCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/TeleportPlotmineCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/UpgradePlotmineCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/PlotmineEvents.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/PermissionUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/MomentoPlotmines.class" afterPath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/MomentoPlotmines.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/command/CommandHandler.class" afterPath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/command/CommandHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/command/plotmine/CreatePlotmineCommand.class" afterPath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/command/plotmine/CreatePlotmineCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/command/plotmine/HelpPlotmineCommand.class" afterPath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/command/plotmine/HelpPlotmineCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/command/tokens/GiveTokenCommand.class" afterPath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/command/tokens/GiveTokenCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/configuration/ConfigManager.class" afterPath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/configuration/ConfigManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/plotmine/PlotmineService.class" afterPath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/plotmine/PlotmineService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/profile/Profile.class" afterPath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/profile/Profile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/util/MessageUtils.class" afterPath="$PROJECT_DIR$/out/production/MomentoPlotmines/us/mattmarion/momentoplotmines/util/MessageUtils.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MomentoPlotmines/messages.yml" afterPath="$PROJECT_DIR$/out/production/MomentoPlotmines/messages.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/messages.yml" afterPath="$PROJECT_DIR$/src/messages.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/MomentoPlotmines.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/MomentoPlotmines.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/CommandHandler.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/CommandHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/CreatePlotmineCommand.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/CreatePlotmineCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/HelpPlotmineCommand.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/HelpPlotmineCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/tokens/GiveTokenCommand.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/tokens/GiveTokenCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/tokens/SetTokenCommand.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/tokens/SetTokenCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/tokens/TokensCommand.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/tokens/TokensCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/configuration/ConfigManager.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/configuration/ConfigManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/Cuboid.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/Cuboid.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/PlotmineService.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/PlotmineService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/profile/Profile.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/profile/Profile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/UpgradePlotmineCommand.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/UpgradePlotmineCommand.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/MessageUtils.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/MessageUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/Utilities.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/Utilities.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/PermissionUtils.java" afterPath="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/PermissionUtils.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,21 +29,11 @@
       <file leaf-file-name="MessageUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/MessageUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            <state relative-caret-position="662">
+              <caret line="60" column="135" lean-forward="true" selection-start-line="60" selection-start-column="107" selection-end-line="60" selection-end-column="135" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConfigManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/configuration/ConfigManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="70" column="36" lean-forward="false" selection-start-line="70" selection-start-column="36" selection-end-line="70" selection-end-column="36" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -76,21 +41,53 @@
       <file leaf-file-name="messages.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/messages.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="67" lean-forward="false" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
+            <state relative-caret-position="399">
+              <caret line="19" column="84" lean-forward="true" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UpgradePlotmineCommand.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UpgradePlotmineCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/UpgradePlotmineCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+            <state relative-caret-position="336">
+              <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PermissionUtils.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/PermissionUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MomentoCommandExecutor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/MomentoCommandExecutor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Plotmine.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/Plotmine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,11 +95,9 @@
       <file leaf-file-name="PlotmineService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/PlotmineService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,8 +105,8 @@
       <file leaf-file-name="CommandHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/CommandHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="27" column="60" lean-forward="true" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
+            <state relative-caret-position="273">
+              <caret line="28" column="29" lean-forward="false" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -120,18 +115,8 @@
       <file leaf-file-name="CreatePlotmineCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/CreatePlotmineCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="49" column="121" lean-forward="true" selection-start-line="49" selection-start-column="121" selection-end-line="49" selection-end-column="121" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Utilities.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/Utilities.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="20" column="64" lean-forward="true" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+            <state relative-caret-position="182">
+              <caret line="55" column="33" lean-forward="true" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -192,13 +177,11 @@
         <option value="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/profile/ProfileListeners.java" />
         <option value="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/ConfirmationService.java" />
         <option value="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/Cuboid.java" />
-        <option value="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/PlotmineService.java" />
         <option value="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/MomentoPlotmines.java" />
         <option value="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/profile/Profile.java" />
         <option value="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/Plotmine.java" />
         <option value="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/configuration/ConfigManager.java" />
         <option value="$PROJECT_DIR$/src/plotmine.yml" />
-        <option value="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/PermissionUtils.java" />
         <option value="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/tokens/GiveTokenCommand.java" />
         <option value="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/tokens/SetTokenCommand.java" />
         <option value="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/HelpPlotmineCommand.java" />
@@ -206,12 +189,14 @@
         <option value="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/tokens/TokensCommand.java" />
         <option value="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/CreatePlotmineCommand.java" />
         <option value="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/PlotmineEvents.java" />
-        <option value="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/CommandHandler.java" />
         <option value="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/Utilities.java" />
-        <option value="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/MessageUtils.java" />
         <option value="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/DeletePlotmineCommand.java" />
+        <option value="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/PlotmineService.java" />
+        <option value="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/MessageUtils.java" />
         <option value="$PROJECT_DIR$/src/messages.yml" />
+        <option value="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/CommandHandler.java" />
         <option value="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/UpgradePlotmineCommand.java" />
+        <option value="$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/PermissionUtils.java" />
       </list>
     </option>
   </component>
@@ -895,14 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/MomentoCommandExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Downloads/PlotSquared-Bukkit-17.12.07-6c06e48-1944.jar!/com/intellectualcrafters/plot/object/PlotArea.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -961,14 +938,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/Plotmine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1596">
-          <caret line="86" column="45" lean-forward="true" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/plotmine.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -990,16 +959,6 @@
         <state relative-caret-position="497">
           <caret line="66" column="30" lean-forward="false" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/PermissionUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="44" lean-forward="true" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1055,16 +1014,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/MessageUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/Utilities.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -1083,32 +1032,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/CommandHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="27" column="60" lean-forward="true" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/PlotmineService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/messages.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="67" lean-forward="false" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/DeletePlotmineCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-49">
@@ -1121,16 +1044,76 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/CreatePlotmineCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="49" column="121" lean-forward="true" selection-start-line="49" selection-start-column="121" selection-end-line="49" selection-end-column="121" />
+        <state relative-caret-position="182">
+          <caret line="55" column="33" lean-forward="true" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/PlotmineService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/plotmine/Plotmine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/MessageUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="662">
+          <caret line="60" column="135" lean-forward="true" selection-start-line="60" selection-start-column="107" selection-end-line="60" selection-end-column="135" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/messages.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="84" lean-forward="true" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/MomentoCommandExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/CommandHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="28" column="29" lean-forward="false" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/command/plotmine/UpgradePlotmineCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        <state relative-caret-position="336">
+          <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/us/mattmarion/momentoplotmines/util/PermissionUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

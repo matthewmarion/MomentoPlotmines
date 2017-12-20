@@ -17,6 +17,8 @@ NULL-PLOTMINE-MESSAGE: "&eNo created plotmine found."
 SUCCESS-TELEPORT-MESSAGE: "&aTeleported you to &e{name}'s &aplotmine."
 CONFIRM-PLOTMINE-DELETE-MESSAGE: "&c&lWARNING: &eYou are about to delete your plotmine. &eRepeat the same command if you want to continue."
 SUCCESS-DELETE-PLOTMINE-MESSAGE: "&aYou have successfully deleted your plotmine."
+NO-UPGRADES-AVAILABLE-MESSAGE: "&aYour mine is fully upgraded for your rank! Visit <link> to purchase more upgrades!"
+SUCCESS-UPGRADE-MINE-MESSAGE: "&aYou have successfully upgraded your mine!"
 
 HELP-MESSAGES:
   - '&cKey: &e<> &7fields are required &c|| &e() &7fields are optional.'

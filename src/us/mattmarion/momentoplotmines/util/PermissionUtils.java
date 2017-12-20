@@ -8,14 +8,10 @@ public class PermissionUtils {
 
     public static Material getTierComposition(Player player) {
         for (int i = 3; i > 0; i--) {
-            String permission = "plotmine.tier" + i;
-            System.out.println("checking for: " + permission);
             if (player.hasPermission("plotmine.tier" + i)) {
-                System.out.println("Stopping because found on: " + i);
                 return Material.getMaterial(ConfigManager.getPlotmineConfig().getString("Tier" + i + ".composition"));
             }
         }
-        System.out.println("found nothing");
         return Material.getMaterial(ConfigManager.getPlotmineConfig().getString("Tier1" + ".composition"));
     }
 

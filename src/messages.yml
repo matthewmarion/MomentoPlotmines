@@ -19,6 +19,15 @@ CONFIRM-PLOTMINE-DELETE-MESSAGE: "&c&lWARNING: &eYou are about to delete your pl
 SUCCESS-DELETE-PLOTMINE-MESSAGE: "&aYou have successfully deleted your plotmine."
 NO-UPGRADES-AVAILABLE-MESSAGE: "&aYour mine is fully upgraded for your rank! Visit <link> to purchase more upgrades!"
 SUCCESS-UPGRADE-MINE-MESSAGE: "&aYou have successfully upgraded your mine!"
+INVALID-BALANCE-MESSAGE: "&aInsufficient balance. You need more tokens to add members to your plotmine!"
+PLAYER-ALREADY-MEMBER-MESSAGE: "&cThis player is already a member of your plotmine."
+SUCCESS-ADD-MEMBER-MESSAGE: "&aSuccessfully added &e{player} &aas a member to your plotmine."
+PLAYER-NOT-MEMBER-MESSAGE: "&cThis player is currently not a member of your plotmine."
+SUCCESS-REMOVE-MEMBER-MESSAGE: "&aSuccessfully removed &e{player} &afrom your plotmine."
+ERROR-ON-PLOTMINE-USAGE-MESSAGE: "&cYou do not have permission to use this plotmine!"
+SUCCESS-RESET-MINE-MESSAGE: "&aSuccessfully reset mine."
+INVALID-MATERIAL-MESSAGE: "&cInvalid material."
+SUCCESS-COMPOSITION-CHANGE-MESSAGE: "&aSuccessfully changed composition."
 
 HELP-MESSAGES:
   - '&cKey: &e<> &7fields are required &c|| &e() &7fields are optional.'

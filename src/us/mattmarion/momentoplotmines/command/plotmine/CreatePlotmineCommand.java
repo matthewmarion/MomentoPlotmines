@@ -1,23 +1,20 @@
 package us.mattmarion.momentoplotmines.command.plotmine;
 
-import com.intellectualcrafters.plot.PS;
 import com.intellectualcrafters.plot.object.Location;
 import com.intellectualcrafters.plot.object.Plot;
-import com.intellectualcrafters.plot.object.PlotArea;
 import com.intellectualcrafters.plot.object.PlotPlayer;
-import com.intellectualcrafters.plot.object.worlds.PlotAreaManager;
-import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import us.mattmarion.momentoplotmines.command.MomentoCommandExecutor;
-import us.mattmarion.momentoplotmines.configuration.ConfigManager;
 import us.mattmarion.momentoplotmines.plotmine.Plotmine;
 import us.mattmarion.momentoplotmines.plotmine.PlotmineService;
 import us.mattmarion.momentoplotmines.profile.Profile;
 import us.mattmarion.momentoplotmines.util.ConfirmationService;
 import us.mattmarion.momentoplotmines.util.MessageUtils;
 import us.mattmarion.momentoplotmines.util.PermissionUtils;
+import org.bukkit.util.Vector;
+import us.mattmarion.momentoplotmines.util.Utilities;
 
 import java.util.*;
 
@@ -58,10 +55,10 @@ public class CreatePlotmineCommand extends MomentoCommandExecutor {
         }
         List<String> members = new ArrayList<String>();
         Material composition = PermissionUtils.getTierComposition(player);
-        System.out.println(composition);
         int size = PermissionUtils.getTierSize(player);
-        System.out.println(size);
-        Plotmine plotmine = new Plotmine(player.getUniqueId(), player.getLocation(), composition, size, members);
+        Vector minimumPoint = Utilities.getMinimumVectorFromLocation(player.getLocation(), size);
+        Vector maximumPoint = Utilities.getMaximumVectorFromLocation(player.getLocation(), size);
+        Plotmine plotmine = new Plotmine(player.getUniqueId(), player.getLocation(), minimumPoint, maximumPoint, composition, size, members);
         profile.setPlotmine(plotmine);
         profile.save();
         PlotmineService plotmineService = new PlotmineService(plotmine);

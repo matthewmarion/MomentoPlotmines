@@ -20,10 +20,9 @@ public class TokensCommand extends MomentoCommandExecutor {
 
     @Override
     public void execute(CommandSender sender, String[] args) {
-        String message = MessageUtils.PLAYER_TOKEN_BALANCE_MESSAGE;
         if (args.length == 1) {
             int tokens = getTokens((Player) sender);
-            MessageUtils.tell(sender, message, "{tokens}", Integer.toString(tokens));
+            MessageUtils.tell(sender, MessageUtils.PLAYER_TOKEN_BALANCE_MESSAGE, "{tokens}", Integer.toString(tokens));
             return;
         }
         Player player = (Player) sender;
@@ -32,12 +31,12 @@ public class TokensCommand extends MomentoCommandExecutor {
             return;
         }
         Player target = Bukkit.getPlayerExact(args[1]);
-        if (!Utilities.playerIsFound(target)) {
+        if (Utilities.targetIsNull(target)) {
             MessageUtils.tell(sender, MessageUtils.PLAYER_NOT_FOUND_MESSAGE, null, null);
             return;
         }
         int tokens = getTokens(target);
-        MessageUtils.tell(sender, message, "{tokens}", Integer.toString(tokens));
+        MessageUtils.tell(sender, MessageUtils.PLAYER_TOKEN_BALANCE_MESSAGE, "{tokens}", Integer.toString(tokens));
     }
 
     private int getTokens(Player target) {

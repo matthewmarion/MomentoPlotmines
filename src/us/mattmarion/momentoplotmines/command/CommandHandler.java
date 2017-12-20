@@ -27,6 +27,10 @@ public class CommandHandler implements CommandExecutor {
         commands.put("teleport", new TeleportPlotmineCommand());
         commands.put("delete", new DeletePlotmineCommand());
         commands.put("upgrade", new UpgradePlotmineCommand());
+        commands.put("add", new AddMemberPlotmineCommand());
+        commands.put("remove", new RemoveMemberPlotmineCommand());
+        commands.put("reset", new ResetPlotmineCommand());
+        commands.put("composition", new CompositionPlotmineCommand());
     }
 
     @Override

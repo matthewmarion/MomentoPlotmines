@@ -35,7 +35,5 @@ public class PlotmineService {
         for (Block block : plotCube.getBlocks()) {
             block.setType(material);
         }
-
-        Vector wallOne = new Vector(xOne, yOne, zOne);
     }
 }

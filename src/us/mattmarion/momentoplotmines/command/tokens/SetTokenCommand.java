@@ -22,7 +22,7 @@ public class SetTokenCommand extends MomentoCommandExecutor {
     @Override
     public void execute(CommandSender sender, String[] args) {
         Player target = Bukkit.getPlayer(args[1]);
-        if (!Utilities.playerIsFound(target)) {
+        if (Utilities.targetIsNull(target)) {
             MessageUtils.tell(sender, MessageUtils.PLAYER_NOT_FOUND_MESSAGE, null, null);
             return;
         }

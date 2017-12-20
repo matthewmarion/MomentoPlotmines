@@ -42,7 +42,7 @@ public class MessageUtils {
     public static final String FIELD_NOT_NUMERIC_MESSAGE = ConfigManager.getMessagesConfig().getString("FIELD-NOT-NUMERIC-MESSAGE");
 
     // Token messages
-    public static final String PLAYER_TOKEN_BALANCE_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER-TOKEN_BALANCE-MESSAGE");
+    public static final String PLAYER_TOKEN_BALANCE_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER-TOKEN-BALANCE-MESSAGE");
     public static final String PLAYER_GIVE_TOKEN_SENDER_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER-GIVE-TOKEN-SENDER-MESSAGE");
     public static final String PLAYER_GIVE_TOKEN_RECIPIENT_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER-GIVE-TOKEN-RECIPIENT-MESSAGE");
     public static final String PLAYER_SET_TOKEN_SENDER_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER-SET-TOKEN_SENDER-MESSAGE");
@@ -59,5 +59,13 @@ public class MessageUtils {
     public static final String SUCCESS_DELETE_PLOTMINE_MESSAGE = ConfigManager.getMessagesConfig().getString("SUCCESS-DELETE-PLOTMINE-MESSAGE");
     public static final String NO_UPGRADES_AVAILABLE = ConfigManager.getMessagesConfig().getString("NO-UPGRADES-AVAILABLE-MESSAGE");
     public static final String SUCCESS_UPGRADE_MINE_MESSAGE = ConfigManager.getMessagesConfig().getString("SUCCESS-UPGRADE-MINE-MESSAGE");
-
+    public static final String INVALID_BALANCE_MESSAGE = ConfigManager.getMessagesConfig().getString("INVALID-BALANCE-MESSAGE");
+    public static final String PLAYER_ALREADY_MEMBER_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER-ALREADY-MEMBER-MESSAGE");
+    public static final String SUCCESS_ADD_MEMBER_MESSAGE = ConfigManager.getMessagesConfig().getString("SUCCESS-ADD-MEMBER-MESSAGE");
+    public static final String PLAYER_NOT_MEMBER_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER-NOT-MEMBER-MESSAGE");
+    public static final String SUCCESS_REMOVE_MEMBER_MESSAGE = ConfigManager.getMessagesConfig().getString("SUCCESS-REMOVE-MEMBER-MESSAGE");
+    public static final String ERROR_ON_PLOTMINE_USAGE_MESSAGE = ConfigManager.getMessagesConfig().getString("ERROR-ON-PLOTMINE-USAGE-MESSAGE");
+    public static final String SUCCESS_RESET_MINE_MESSAGE = ConfigManager.getMessagesConfig().getString("SUCCESS-RESET-MINE-MESSAGE");
+    public static final String INVALID_MATERIAL_MESSAGE = ConfigManager.getMessagesConfig().getString("INVALID-MATERIAL-MESSAGE");
+    public static final String SUCCESS_COMPOSITION_CHANGE_MESSAGE = ConfigManager.getMessagesConfig().getString("SUCCESS-COMPOSITION-CHANGE-MESSAGE");
 }

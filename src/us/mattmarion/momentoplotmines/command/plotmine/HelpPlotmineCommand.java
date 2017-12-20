@@ -16,6 +16,10 @@ public class HelpPlotmineCommand extends MomentoCommandExecutor {
 
     @Override
     public void execute(CommandSender sender, String[] args) {
+        if (sender.hasPermission("plotmine.admin")) {
+            MessageUtils.tellList(sender, MessageUtils.ADMIN_HELP_MESSAGES);
+            return;
+        }
         MessageUtils.tellList(sender, MessageUtils.HELP_MESSAGES);
     }
 }

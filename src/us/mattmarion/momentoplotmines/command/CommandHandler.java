@@ -25,6 +25,7 @@ public class CommandHandler implements CommandExecutor {
         commands.put("create", new CreatePlotmineCommand());
         commands.put("help", new HelpPlotmineCommand());
         commands.put("teleport", new TeleportPlotmineCommand());
+        commands.put("tp", new TeleportPlotmineCommand());
         commands.put("delete", new DeletePlotmineCommand());
         commands.put("upgrade", new UpgradePlotmineCommand());
         commands.put("add", new AddMemberPlotmineCommand());
@@ -37,6 +38,10 @@ public class CommandHandler implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (cmd.getName().equalsIgnoreCase("plotmine")) {
             if (args.length == 0) {
+                if (sender.hasPermission("plotmine.admin")) {
+                    MessageUtils.tellList(sender, MessageUtils.ADMIN_HELP_MESSAGES);
+                    return true;
+                }
                 MessageUtils.tellList(sender, MessageUtils.HELP_MESSAGES);
                 return true;
             }

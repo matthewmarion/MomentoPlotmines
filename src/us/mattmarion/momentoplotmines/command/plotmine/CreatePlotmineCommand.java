@@ -33,6 +33,10 @@ public class CreatePlotmineCommand extends MomentoCommandExecutor {
     @Override
     public void execute(CommandSender sender, String[] args) {
         Player player = (Player) sender;
+        if (!PermissionUtils.playerHasTier(player)) {
+            MessageUtils.tell(sender, MessageUtils.NO_PERMISSION_MESSAGE, null, null);
+            return;
+        }
         PlotPlayer plotPlayer = PlotPlayer.get(player.getName());
         Location location = plotPlayer.getLocation();
         Plot plot = Plot.getPlot(location);
@@ -60,10 +64,16 @@ public class CreatePlotmineCommand extends MomentoCommandExecutor {
         Vector maximumPoint = Utilities.getMaximumVectorFromLocation(player.getLocation(), size);
         Plotmine plotmine = new Plotmine(player.getUniqueId(), player.getLocation(), minimumPoint, maximumPoint, composition, size, members);
         profile.setPlotmine(plotmine);
-        profile.save();
-        PlotmineService plotmineService = new PlotmineService(plotmine);
+        PlotmineService plotmineService = new PlotmineService(plotmine, plot);
         plotmineService.build(plotmine.getMaterial());
+        if (!plotmineService.canPlacePlotHere(plot)) {
+            profile.setPlotmine(null);
+            MessageUtils.tell(sender, MessageUtils.INVALID_CREATE_LOCATION_PLOTMINE_MESSAGE, null, null);
+            profile.save();
+            return;
+        }
         MessageUtils.tell(sender, MessageUtils.SUCCESS_CREATE_PLOTMINE_MESSAGE, null, null);
+        profile.save();
     }
 
     private boolean playerIsPlotOwner(Player player, Plot plot) {

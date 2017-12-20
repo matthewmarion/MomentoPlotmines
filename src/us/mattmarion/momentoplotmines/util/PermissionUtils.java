@@ -6,6 +6,15 @@ import us.mattmarion.momentoplotmines.configuration.ConfigManager;
 
 public class PermissionUtils {
 
+    public static boolean playerHasTier(Player player) {
+        for (int i = 3; i > 0; i--) {
+            if (player.hasPermission("plotmine.tier" + i)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public static Material getTierComposition(Player player) {
         for (int i = 3; i > 0; i--) {
             if (player.hasPermission("plotmine.tier" + i)) {

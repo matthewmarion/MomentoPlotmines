@@ -9,6 +9,10 @@ import org.bukkit.util.Vector;
 
 public class Utilities {
 
+    public static boolean isAdmin(Player player) {
+        return player.hasPermission("plotmine.admin");
+    }
+
     public static Location getLocationFromConfig(FileConfiguration config, String path) {
         World world = Bukkit.getWorld(config.getString(path + ".world"));
         double x = config.getDouble(path + ".x");

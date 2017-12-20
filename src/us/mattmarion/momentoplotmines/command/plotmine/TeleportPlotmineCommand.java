@@ -7,6 +7,7 @@ import us.mattmarion.momentoplotmines.command.MomentoCommandExecutor;
 import us.mattmarion.momentoplotmines.plotmine.Plotmine;
 import us.mattmarion.momentoplotmines.profile.Profile;
 import us.mattmarion.momentoplotmines.util.MessageUtils;
+import us.mattmarion.momentoplotmines.util.Utilities;
 
 public class TeleportPlotmineCommand extends MomentoCommandExecutor {
 
@@ -29,16 +30,16 @@ public class TeleportPlotmineCommand extends MomentoCommandExecutor {
                 MessageUtils.tell(sender, MessageUtils.NULL_PLOTMINE_MESSAGE, null, null);
                 return;
             }
+            if (plotmine.getLocation() == null) {
+                MessageUtils.tell(sender, MessageUtils.NULL_PLOTMINE_MESSAGE, null, null);
+                return;
+            }
             player.teleport(plotmine.getLocation());
             MessageUtils.tell(sender, MessageUtils.SUCCESS_TELEPORT_MESSAGE, "{name}", player.getName());
             return;
         }
 
         if (args.length == 2) {
-            if (!player.hasPermission("plotmine.admin")) {
-                MessageUtils.tell(sender, MessageUtils.NO_PERMISSION_MESSAGE, null, null);
-                return;
-            }
             Player target = Bukkit.getPlayerExact(args[1]);
             if (target == null || !target.isOnline()) {
                 MessageUtils.tell(sender, MessageUtils.PLAYER_NOT_FOUND_MESSAGE, null, null);
@@ -50,10 +51,31 @@ public class TeleportPlotmineCommand extends MomentoCommandExecutor {
                 MessageUtils.tell(sender, MessageUtils.NULL_PLOTMINE_MESSAGE, null, null);
                 return;
             }
+            if (Utilities.isAdmin(player)) {
+                player.teleport(plotmine.getLocation());
+                MessageUtils.tell(sender, MessageUtils.SUCCESS_TELEPORT_MESSAGE, "{name}", target.getName());
+                return;
+            }
+
+            if (playerIsPlotmineOwner(plotmine, player)) {
+                player.teleport(plotmine.getLocation());
+                MessageUtils.tell(sender, MessageUtils.SUCCESS_TELEPORT_MESSAGE, "{name}", target.getName());
+                return;
+            }
+
+            if (!plotmine.isMember(player.getUniqueId().toString())) {
+                MessageUtils.tell(sender, MessageUtils.NO_PERMISSION_MESSAGE, null, null);
+                return;
+            }
             player.teleport(plotmine.getLocation());
             MessageUtils.tell(sender, MessageUtils.SUCCESS_TELEPORT_MESSAGE, "{name}", target.getName());
             return;
         }
 
     }
+
+    private boolean playerIsPlotmineOwner(Plotmine plotmine, Player player) {
+        return plotmine.getOwnerUUID().equals(player.getUniqueId());
+    }
+
 }

@@ -99,8 +99,15 @@ public class Plotmine implements ConfigurationSerializable {
         this.members.remove(uuid);
     }
 
+    public boolean isMember(String uuid) {
+        return members.contains(uuid);
+    }
+
     public boolean containsLocation(com.intellectualcrafters.plot.object.Location location) {
-        return location.getX() >= this.minimumPoint.getX() && location.getX() <= this.maximumPoint.getX() && location.getZ() >= this.minimumPoint.getZ() && location.getZ() <= this.maximumPoint.getZ();
+        //return location.getX() >= this.minimumPoint.getX() && location.getX() <= this.maximumPoint.getX() && location.getZ() >= this.minimumPoint.getZ() && location.getZ() <= this.maximumPoint.getZ();
+        System.out.println("Block X: " + location.getX() + " ----------- Minimum X: " + this.minimumPoint.getX() + " ---------- Max X: " + this.maximumPoint.getX());
+        System.out.println("Block Z: " + location.getZ() + " ----------- Minimum Z: " + this.minimumPoint.getZ() + " ---------- Max X: " + this.maximumPoint.getZ());
+        return location.getX() >= this.minimumPoint.getX() -1 && location.getX() <= this.maximumPoint.getX() && location.getZ() >= this.minimumPoint.getZ() - 1 && location.getZ() <= this.maximumPoint.getZ();
     }
 
     public static Plotmine load(FileConfiguration config, UUID uuid) {

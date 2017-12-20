@@ -26,7 +26,7 @@ public class TokensCommand extends MomentoCommandExecutor {
             return;
         }
         Player player = (Player) sender;
-        if (player.hasPermission("plotmine.admin")) {
+        if (!player.hasPermission("plotmine.admin")) {
             MessageUtils.tell(sender, MessageUtils.NO_PERMISSION_MESSAGE, null, null);
             return;
         }

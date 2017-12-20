@@ -50,6 +50,7 @@ public class MessageUtils {
 
     // Mine messages
     public static final List<String> HELP_MESSAGES = ConfigManager.getMessagesConfig().getStringList("HELP-MESSAGES");
+    public static final List<String> ADMIN_HELP_MESSAGES = ConfigManager.getMessagesConfig().getStringList("ADMIN-HELP-MESSAGES");
     public static final String SUCCESS_CREATE_PLOTMINE_MESSAGE = ConfigManager.getMessagesConfig().getString("SUCCESS-CREATE-PLOTMINE-MESSAGE");
     public static final String INVALID_CREATE_LOCATION_PLOTMINE_MESSAGE = ConfigManager.getMessagesConfig().getString("INVALID-CREATE-LOCATION-PLOTMINE-MESSAGE");
     public static final String CONFIRM_PLOTMINE_CREATE_MESSAGE = ConfigManager.getMessagesConfig().getString("CONFIRM-PLOTMINE-CREATE-MESSAGE");

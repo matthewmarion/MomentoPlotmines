@@ -44,3 +44,6 @@ HELP-MESSAGES:
   - '&e/plotmine remove <name> - &7Remove a member from your plotmine.'
   - '&e/plotmine composition <id> - &7Set your plotmine composition.'
 
+ADMIN-HELP-MESSAGES:
+  - 'Admin message1 for /help'
+  - 'Admin message2'

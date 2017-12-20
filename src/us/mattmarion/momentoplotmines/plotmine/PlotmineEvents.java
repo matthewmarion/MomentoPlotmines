@@ -18,12 +18,16 @@ public class PlotmineEvents implements Listener {
 
     @EventHandler
     public void on(BlockBreakEvent event) {
-        System.out.println("breaking block....");
         Block block = event.getBlock();
+        if (block == null) {
+            return;
+        }
         Player player = event.getPlayer();
-        PlotPlayer plotPlayer = PlotPlayer.get(player.getName());
         Location blockLocation = new Location(block.getWorld().getName(), block.getX(), block.getY(), block.getZ());
         Plot plot = Plot.getPlot(blockLocation);
+        if (plot == null) {
+            return;
+        }
         UUID[] owners = plot.getOwners().toArray(new UUID[plot.getOwners().size()]);
         Profile profile = Profile.getByUUID(owners[0]);
         if (profile == null) {
@@ -52,6 +56,9 @@ public class PlotmineEvents implements Listener {
         PlotPlayer plotPlayer = PlotPlayer.get(player.getName());
         Location blockLocation = new Location(block.getWorld().getName(), block.getX(), block.getY(), block.getZ());
         Plot plot = Plot.getPlot(blockLocation);
+        if (plot == null) {
+            return;
+        }
         UUID[] owners = plot.getOwners().toArray(new UUID[plot.getOwners().size()]);
         Profile profile = Profile.getByUUID(owners[0]);
         if (profile == null) {

@@ -1,5 +1,8 @@
 package us.mattmarion.momentoplotmines.command.plotmine;
 
+import com.intellectualcrafters.plot.object.Location;
+import com.intellectualcrafters.plot.object.Plot;
+import com.intellectualcrafters.plot.object.PlotPlayer;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.util.Vector;
@@ -31,10 +34,14 @@ public class ResetPlotmineCommand extends MomentoCommandExecutor {
             return;
         }
 
+        PlotPlayer plotPlayer = PlotPlayer.get(player.getName());
+        Location location = plotPlayer.getLocation();
+        Plot plot = Plot.getPlot(location);
+
         Vector min = Utilities.getMinimumVectorFromLocation(currentMine.getLocation(), currentMine.getSize());
         Vector max = Utilities.getMaximumVectorFromLocation(currentMine.getLocation(), currentMine.getSize());
         Plotmine resetMine = new Plotmine(player.getUniqueId(), currentMine.getLocation(), min, max, currentMine.getMaterial(), currentMine.getSize(), currentMine.getMembers());
-        PlotmineService plotmineService = new PlotmineService(resetMine);
+        PlotmineService plotmineService = new PlotmineService(resetMine, plot);
         plotmineService.build(currentMine.getMaterial());
         MessageUtils.tell(sender, MessageUtils.SUCCESS_RESET_MINE_MESSAGE, null, null);
     }

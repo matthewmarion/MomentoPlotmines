@@ -11,7 +11,7 @@ import us.mattmarion.momentoplotmines.util.Utilities;
 
 public class GiveTokenCommand extends MomentoCommandExecutor {
 
-    public void GiveTokenCommand() {
+    public GiveTokenCommand() {
         setSubCommand("givetoken");
         setPermission("plotmine.admin");
         setUsage("/plotmine givetoken <name> <amount>");

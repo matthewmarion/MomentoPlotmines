@@ -1,5 +1,8 @@
 package us.mattmarion.momentoplotmines.command.plotmine;
 
+import com.intellectualcrafters.plot.object.Location;
+import com.intellectualcrafters.plot.object.Plot;
+import com.intellectualcrafters.plot.object.PlotPlayer;
 import org.bukkit.Material;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -27,6 +30,9 @@ public class UpgradePlotmineCommand extends MomentoCommandExecutor {
     public void execute(CommandSender sender, String[] args) {
         Player player = (Player) sender;
         Profile profile = Profile.getByPlayer(player);
+        PlotPlayer plotPlayer = PlotPlayer.get(player.getName());
+        Location location = plotPlayer.getLocation();
+        Plot plot = Plot.getPlot(location);
 
         if (profile.getPlotmine() == null) {
             MessageUtils.tell(sender, MessageUtils.NULL_PLOTMINE_MESSAGE, null, null);
@@ -47,8 +53,12 @@ public class UpgradePlotmineCommand extends MomentoCommandExecutor {
         Vector min = Utilities.getMinimumVectorFromLocation(currentMine.getLocation(), size);
         Vector max = Utilities.getMaximumVectorFromLocation(currentMine.getLocation(), size);
         Plotmine upgradedMine = new Plotmine(player.getUniqueId(), currentMine.getLocation(), min, max, material, size, currentMine.getMembers());
-        PlotmineService plotmineService = new PlotmineService(upgradedMine);
+        PlotmineService plotmineService = new PlotmineService(upgradedMine, plot);
         plotmineService.build(material);
+        if (!plotmineService.canPlacePlotHere(plot)) {
+            MessageUtils.tell(sender, MessageUtils.INVALID_CREATE_LOCATION_PLOTMINE_MESSAGE, null, null);
+            return;
+        }
         profile.setPlotmine(upgradedMine);
         profile.save();
         MessageUtils.tell(sender, MessageUtils.SUCCESS_UPGRADE_MINE_MESSAGE, null, null);

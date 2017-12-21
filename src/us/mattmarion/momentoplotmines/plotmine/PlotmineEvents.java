@@ -45,6 +45,7 @@ public class PlotmineEvents implements Listener {
         if (!plotmine.containsLocation(blockLocation)) {
             return;
         }
+
         MessageUtils.tell(player, MessageUtils.ERROR_ON_PLOTMINE_USAGE_MESSAGE, null, null);
         event.setCancelled(true);
     }

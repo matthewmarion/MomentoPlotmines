@@ -11,7 +11,7 @@ import us.mattmarion.momentoplotmines.util.Utilities;
 
 public class SetTokenCommand extends MomentoCommandExecutor {
 
-    public void SetTokenCommand() {
+    public SetTokenCommand() {
         setSubCommand("settoken");
         setPermission("plotmine.admin");
         setUsage("/plotmine settoken <name> <amount>");
@@ -34,6 +34,7 @@ public class SetTokenCommand extends MomentoCommandExecutor {
 
         Profile profile = Profile.getByPlayer(target);
         int amount = Integer.parseInt(args[2]);
+        System.out.println(amount);
         profile.setTokens(amount);
         profile.save();
         MessageUtils.tell(sender, MessageUtils.PLAYER_SET_TOKEN_SENDER_MESSAGE, "{amount}", Integer.toString(amount));

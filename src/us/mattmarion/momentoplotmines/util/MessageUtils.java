@@ -45,7 +45,7 @@ public class MessageUtils {
     public static final String PLAYER_TOKEN_BALANCE_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER-TOKEN-BALANCE-MESSAGE");
     public static final String PLAYER_GIVE_TOKEN_SENDER_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER-GIVE-TOKEN-SENDER-MESSAGE");
     public static final String PLAYER_GIVE_TOKEN_RECIPIENT_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER-GIVE-TOKEN-RECIPIENT-MESSAGE");
-    public static final String PLAYER_SET_TOKEN_SENDER_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER-SET-TOKEN_SENDER-MESSAGE");
+    public static final String PLAYER_SET_TOKEN_SENDER_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER-SET-TOKEN-SENDER-MESSAGE");
     public static final String PLAYER_SET_TOKEN_RECIPIENT_MESSAGE = ConfigManager.getMessagesConfig().getString("PLAYER-SET-TOKEN-RECIPIENT-MESSAGE");
 
     // Mine messages
